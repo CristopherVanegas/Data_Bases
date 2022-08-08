@@ -20,6 +20,27 @@ values
 
 select * from product;
 
-select u.id, u.email, p.name from user u left join product p;
+
+-- LEFT-JOIN	-	BRINGS THE USER TABLE AND PRODUCTS ONLY IF THEY'VE BEEN CREATED BY THEM.
+select u.id, u.email, p.name from user u left join product p on u.id = p.created_by;
+
+-- RIGHT-JOIN
+select u.id, u.email, p.name from user u right join product p on u.id = p.created_by;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
