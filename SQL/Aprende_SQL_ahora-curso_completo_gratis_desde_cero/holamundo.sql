@@ -28,8 +28,6 @@ CREATE TABLE `animales` (
 
 
 
-
-
 -- INSERT
 
 INSERT INTO animales (tipo, estado) VALUES ('chanchito', 'feliz');
@@ -42,15 +40,11 @@ SELECT * FROM animales WHERE estado = 'feliz' AND tipo = 'chanchito';	-- SELECTS
 
 
 
-
-
 -- UPDATE
 
 UPDATE animales SET estado = 'feliz' where id = 5;
 UPDATE animales SET estado = 'neutro' where id = 6;
 SELECT * FROM animales;
-
-
 
 
 
